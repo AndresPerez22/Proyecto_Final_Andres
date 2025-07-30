@@ -102,6 +102,20 @@
 
       <table class="table table-dark table-striped-columns">
 
+      <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+    <th scope="col">Edad</th>
+    <th scope="col">Correo</th>
+    <th scope="col">Telefono</th>
+    <th scope="col">Editar</th>
+    <th scope="col">Eliminar</th>
+  </tr>
+</thead>
+<tbody>
+
       <?php
       include_once "Controller/conexion.php";
       $conexion = new conexion();
@@ -119,29 +133,17 @@
       
       ?>
        
-<thead>
+
   <tr>
-    <th scope="col">ID</th>
-    <th scope="col">Nombre</th>
-    <th scope="col">Apellido</th>
-    <th scope="col">Edad</th>
-    <th scope="col">Correo</th>
-    <th scope="col">Telefono</th>
-    <th scope="col">Editar</th>
-    <th scope="col">Eliminar</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Avantex</td>
-    <td>Otto</td>
+    <th scope="row"><?php $i ?></th>
+    <td><?php echo $fila ["Nombre"]; ?></td>
+    <td><?php echo $fila ["Apellido"]; ?></td>
+    <td><?php echo $fila ["Edad"]; ?></td>
+    <td><?php echo $fila ["Correo"]; ?></td>
+    <td><?php echo $fila ["Telefono"]; ?></td>
+    <td><a href="Update.php" type="button" class="btn btn-warning">editar</a></td>
     <td>@mdo</td>
-    <td>@mdo</td>
-    <td>@mdo</td>
-    <td>@mdo</td>
-    <td>@mdo</td>
-    <td>@mdo</td>
+    
     
   </tr>
 
@@ -153,7 +155,7 @@ else{
 }
 ?>
 </table>
-        ...
+ 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
