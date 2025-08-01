@@ -57,19 +57,19 @@ Estructura de Carpetas
               +-------------------------------+
                              ↓
          +----------------------------------------------+
-         |                 controllers/                 |
+                          controller                   
          |----------------------------------------------|
-         |  Configuracion.php       
-         |  Conexion.php             
-         |  Registro.php             
-         |  UpdateController         
+            Configuracion.php       
+            Conexion.php             
+            Registro.php             
+            UpdateController         
          +----------------------------------------------+
                              ↓
          +----------------------------------------------+
-         |                 database/                    |
+                           database                    
          |----------------------------------------------|
-         |  BDCensa.sql          
-         |  Registropersonas       
+            BDCensa.sql          
+                   Registropersonas       
          +----------------------------------------------+
                              ↓
               +-------------------------------+
