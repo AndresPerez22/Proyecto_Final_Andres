@@ -7,6 +7,9 @@ Descripcion
 
 El sistema funciona bajo principios CRUD (Crear, Leer, Actualizar, Eliminar) aplicados a una base de datos SQL que gestiona usuarios, servicios y registros académicos. La interfaz web permite a los usuarios inscribirse, explorar cursos de tecnología y conocer más sobre la empresa. Técnicamente, cada acción del usuario se traduce en operaciones CRUD: registro (Create), visualización de información (Read), actualización de perfil (Update) y baja del sistema (Delete). La página está diseñada para ser intuitiva, con navegación clara y formularios conectados a la base de datos mediante backend estructurado, garantizando fluidez y seguridad en las transacciones.
 
+
+
+ 
 #backup base de datos
 
 ```sql
