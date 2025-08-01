@@ -35,6 +35,30 @@ Arquitectura del programa
                |   Base de Datos (SQL)       |
                +-----------------------------+
 
+Estructura de Carpetas
+
+/Proyecto_final_andres/
+│
+├── index.html                   # Página principal del sitio
+├── layout/                                
+│   └── Layout            
+│
+├── js/                         # Lógica en JavaScript (frontend)
+│   └──   Modal.Js           
+│
+├── controllers/                # Controladores (backend)
+│   ├── Configuracion.php       
+│   ├── Conexion.Php           
+│   └── Registro.php 
+│   └── UpdateController 
+│
+├── database/                   # Archivos relacionados con SQL
+│   ├── BDCensa.sql             
+│    └── Registropersonas
+│
+├── README.md                   # Documentación técnica del proyecto
+
+
 
  
 #backup base de datos
