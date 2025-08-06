@@ -11,15 +11,9 @@
 <body style="background-color: #f2f2f2;">
 
   
-  <h1 class="text-center mt-3" style="color: blue;">Bienvenidos a mi pagina</h1>
-
- 
-  <div class="container text-center mt-4 mb-4">
-    <a href="#" class="btn btn-primary m-1">Inicio</a>
-    <a href="#" class="btn btn-warning m-1">Contactanos</a>
-    <a href="#" class="btn btn-success m-1">Quienes Somos</a>
-  </div>
- 
+<?php
+include_once 'Layout/Layout.php';    
+?>
   <div class="container mb-4">
     <h2>Tenemos los mejores programadores para ti </h2>
     <p>tercerizamos tus procesos</p>
@@ -141,7 +135,7 @@
     <td><?php echo $fila ["Edad"]; ?></td>
     <td><?php echo $fila ["Correo"]; ?></td>
     <td><?php echo $fila ["Telefono"]; ?></td>
-    <td><a href="Update.php" type="button" class="btn btn-warning">editar</a></td>
+    <td><a href="Update.php?id=<?php echo $fila["Id"]?>" type="button" class="btn btn-warning">editar</a></td>
     <td>@mdo</td>
     
     
