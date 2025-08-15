@@ -129,7 +129,7 @@ include_once 'Layout/Layout.php';
        
 
   <tr>
-    <th scope="row"><?php $i ?></th>
+    <th scope="row"><?php echo $fila ["Id"]; ?></th>
     <td><?php echo $fila ["Nombre"]; ?></td>
     <td><?php echo $fila ["Apellido"]; ?></td>
     <td><?php echo $fila ["Edad"]; ?></td>

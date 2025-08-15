@@ -33,7 +33,7 @@ if($con->Rowcount() ==0 ){
 }
 $registro=$con->fetch(PDO::FETCH_ASSOC);
 
-echo $registro['Nombre'];
+
 
 
 
@@ -57,13 +57,14 @@ echo $registro['Nombre'];
   <div class="container mb-5">
     <h1 class="text-primary">Regístrate</h1>
 
-    <form action ="Controller/registro.php" Method="POST">
+    <form action ="Controller/UpdateController.php" Method="POST">
       <div class="row">
         <div class="col">
            <input type="text" class="form-control" value="<?php echo htmlspecialchars($registro['Nombre']);?>" name ="nombre">
       </div>
       <div class="col">
-           <input type="text" class="form-control" value="<?php echo htmlspecialchars($registro['Id']);?>" disabled name ="id">
+      <input type="text" class="form-control" name="id" value="<?php echo htmlspecialchars($registro['Id']);?>" readonly>
+
       </div>
 </div>
 <div class="row">
@@ -86,7 +87,7 @@ echo $registro['Nombre'];
 
       </div>
       </div>
-      <button type="Submit">Registrarse</button>
+      <button type="Submit">Actualizar</button>
     </form>
 
     <br> 
