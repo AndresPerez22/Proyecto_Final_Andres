@@ -136,9 +136,9 @@ include_once 'Layout/Layout.php';
     <td><?php echo $fila ["Correo"]; ?></td>
     <td><?php echo $fila ["Telefono"]; ?></td>
     <td><a href="Update.php?id=<?php echo $fila["Id"]?>" type="button" class="btn btn-warning">editar</a></td>
-    <td>@mdo</td>
-    
-    
+    <td><a href="Controller/Deletecontroller.php?id=<?php echo $fila["Id"]?>" type="button" class="btn btn-danger">Borrar</a></td>
+  
+  
   </tr>
 
 </tbody>
